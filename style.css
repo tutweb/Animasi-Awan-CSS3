@@ -1,0 +1,208 @@
+*{margin: 0;padding: 0;}
+
+body{
+	overflow: hidden;
+	background: #fff;
+	/*background: url(http://www.secretsofthefed.com/wp-content/uploads/2013/04/The-Night-Sky-Wallpaper.jpg) top center no-repeat;*/
+	background-size: cover;
+	font-family: 'Source Sans Pro', arial, sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+a{
+	text-decoration: none;
+	color: orange;
+}
+
+#langit{
+	background: #000;
+}
+
+
+.bulan{
+	position: fixed;
+	width: 15px;
+	height: 15px;
+	background: orange;
+	left: 70px;
+	top: 50px;
+	background: yellow;
+
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	opacity: .1;
+
+	border-radius: 50%;
+
+
+	-webkit-animation: bercahaya 1s linear infinite;
+	-moz-animation: bercahaya 3s linear infinite;
+	-ms-animation: bercahaya 1s linear infinite;
+	-o-animation: bercahaya 1s linear infinite;
+	animation: bercahaya 3s linear infinite;
+}
+
+.awan{
+	width: 200px;
+	height: 60px;
+	background:#555;
+	border-radius: 200px;
+	position: relative;
+	z-index: 9999;
+}
+
+
+	.awan:before,
+	.awan:after{
+		content: ' ';
+		position: absolute;
+		background: #555;
+		width: 150px;
+		height: 80px;
+		position: absolute;
+		top: -25px;
+		left: 10px;
+		border-radius:100px;
+		text-transform: rotate(30deg); 
+	}
+
+	.awan:after{
+		width: 120px;
+		height: 120px;
+		top: -55px;
+		left: auto;
+		right: 15px;
+	}
+
+.no1{
+	top: 90px;
+	-webkit-animation: jalankanawan 15s linear infinite;
+	-moz-animation: jalankanawan 15s linear infinite;
+	-ms-animation: jalankanawan 15s linear infinite;
+	-o-animation: jalankanawan 15s linear infinite;
+	animation: jalankanawan 15s linear infinite;
+}
+
+.no2{
+	left: 200px;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-o-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	transform: scale(0.6);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	-webkit-animation: jalankanawan 25s linear infinite;
+	-moz-animation: jalankanawan 25s linear infinite;
+	-ms-animation: jalankanawan 25s linear infinite;
+	-o-animation: jalankanawan 25s linear infinite;
+	animation: jalankanawan 25s linear infinite;
+}
+
+
+.no3{
+	left: -250px;
+	top: -200px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-animation: jalankanawan 20s linear infinite;
+	-moz-animation: jalankanawan 20s linear infinite;
+	-ms-animation: jalankanawan 20s linear infinite;
+	-o-animation: jalankanawan 20s linear infinite;
+	animation: jalankanawan 20s linear infinite;
+}
+
+.no4{
+	left: 470px;
+	top: -250;
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	-o-transform: scale(0.75);
+	-ms-transform: scale(0.75);
+	transform: scale(0.75);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	opacity: 0.75;
+	-webkit-animation: jalankanawan 18s linear infinite;
+	-moz-animation: jalankanawan 18s linear infinite;
+	-ms-animation: jalankanawan 18s linear infinite;
+	-o-animation: jalankanawan 18s linear infinite;
+	animation: jalankanawan 18s linear infinite;
+}
+
+.no5{
+	left: -150px;
+	top: -150px;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-animation: jalankanawan 20s linear infinite;
+	-moz-animation: jalankanawan 20s linear infinite;
+	-ms-animation: jalankanawan 20s linear infinite;
+	-o-animation: jalankanawan 20s linear infinite;
+	animation: jalankanawan 20s linear infinite;
+}
+
+
+
+@-webkit-keyframes jalankanawan{
+	0% { margin-left: 1280px;}
+	100%{margin-left: -1280px;}
+}
+@-moz-keyframes jalankanawan{
+	0% { margin-left: 1280px;}
+	100%{margin-left: -1280px;}
+}
+@-o-keyframes jalankanawan{
+	0% { margin-left: 1280px;}
+	100%{margin-left: -1280px;}
+}
+
+
+
+@-webkit-keyframes bercahaya{
+	0% {opacity: .6; box-shadow:3px 3px 35px 35px orange}
+	100%{opacity: .7;box-shadow:3px 3px 40px 40px orange}
+}
+
+@-moz-keyframes bercahaya{
+	0% {opacity: .6; box-shadow:3px 3px 35px 35px orange}
+	100%{opacity: .7;box-shadow:3px 3px 40px 40px orange}
+}
+
+@-o-keyframes bercahaya{
+	0% {opacity: .6; box-shadow:3px 3px 35px 35px orange}
+	100%{opacity: .7;box-shadow:3px 3px 40px 40px orange}
+}
+
+h1{
+	color: #fff;
+	padding: 10px 50px;
+}
+h1 small{
+	display: block;
+	font-size: 14px;
+}
+.menu{
+	padding: 20px 50px;
+}
+.main{
+	padding: 20px 50px;
+	height: auto;
+}
+.main a{
+	color: #666;
+}
+
